@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>NN团购-单品团</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/single.css"/>
+	</head>
+	<body>
+		<!--公共顶部-->
+		<header>
+			<div class="clear margin">
+				<div class="header_c_l l">
+					<a href="index.html" target="_blank">NN商城首页</a>
+					&nbsp;|&nbsp;
+					<a href="#" target="_blank">中关村在线</a>
+				</div>
+				<ul class="header_c_r r">
+					<li class="login"><a href="login.html" id="loginNow">请登录</a><span>|</span></li>
+					<li class="register"><a id="registerNow" href="register.html">免费注册</a><span>|</span></li>
+					<li><a href="#">我的订单</a><span>|</span></li>
+					<li class="guanzhu hd_hover">
+						<a href="#">关注团购<i></i></a><span>|</span>
+						<div class="code head-pub">
+                            <img src="img/gaonana.png" alt="" width="124px" height="124px"> 
+                            <p> 微信关注:NN商城</p>
+                            <p>扫码赢优惠&nbsp;订单时时查</p>
+                        </div>
+					</li>
+					<li class="hd_hover remind">
+						<a href="#">订阅推荐<i></i></a><span>|</span>
+						<div class="email-box head-pub">
+                            <p class="e_adr">请输入邮箱地址</p>
+                            <input id="tuan_email" type="text" value="">
+                            <input id="tuan_button" type="button" value="确定">
+                            <p id="tuan_error" class="remind1">推荐时间：每周二、四、六（节假日除外）</p>
+                        </div>
+					</li>
+					<li><a href="helpcenter.html">帮助中心</a></li>
+				</ul>
+			</div>
+		</header>
+		<!--公共头部-->
+		<section id="head-logo" class="margin clear">
+			<a class="logo l" href="#"><img src="img/nnlogo.png"/></a>
+			<div class="search_box l">
+				<form action="index.php" method="GET">
+                    <div class="search" id="search">
+                        <input type="text" placeholder="游戏本" name="searchName" id="search-text">
+                        <input type="submit" value="搜索" class="submit">
+                        <!--<ul class="search-list">
+                        	<li><a href="#">魅族手机</a></li>				
+                            <li><a href="http://tuan.zol.com/brand/239.html?type=1&amp;spm=1057.44010">佳能相机</a></li>				
+                            <li><a href="http://www.zol.com/index.php?c=List&amp;keyword=%D0%A1%C3%D7%CA%D6%BB%FA&amp;spm=921">小米手机</a></li>				
+                            <li><a href="http://www.zol.com/detail/notebook/dell/28404791.html">戴尔 燃7000</a></li>				
+                            <li><a href="http://tuan.zol.com/index.php?c=List&amp;a=TuanSearch&amp;searchName=%BB%AA%CE%AA">华为手机</a></li>				
+                        </ul>-->
+                    </div>
+            	</form>
+            	<ul class="hot-search clear">
+                    <li><a href="#">魅族手机</a></li>				
+                    <li><a href="#">佳能相机</a></li>				
+                    <li><a href="#">小米手机</a></li>				
+                    <li><a href="#">戴尔 燃7000</a></li>				
+                    <li><a href="#">华为手机</a></li>				
+                </ul>
+			</div>
+			<div class="slogan r">
+				<a href="#" class="slo_img"></a>
+				<p>客服电话:<span>400-688-1999</span></p>
+			</div>
+		</section>
+		<!--导航栏-->
+		<div id="nav">
+			<div class="nav_cen margin clear">
+				<h3>团购商品分类<i class="hi1"></i>
+					<ul class="menu-list menu-list-single">
+	                    <li class="list1"><div><a href="#" target="_blank">手机通讯</a></div></li>
+	                    <li class="list2"><div><a href="#" target="_blank">数码影像</a></div></li>
+	                    <li class="list3"><div><a href="#" target="_blank">笔记本/电脑</a></div></li>
+	                    <li class="list4"><div><a href="#" target="_blank">电脑外设</a></div></li>
+	                    <li class="list5"><div><a href="#" target="_blank">DIY主机/配件</a></div></li>
+	                    <li class="list6"><div><a href="#" target="_blank">家电/其他</a></div></li>
+	                    <li class="list7"><div><a href="#" target="_blank">智能生活</a></div></li>
+	                </ul>
+				</h3>
+                <ul class="nav-list l">
+                	<li><a href="index.html">首页</a></li>
+                	<li class="active"><a href="single_team.html">单品团</a></li>
+                	<li><a href="while-team.html">即将开团</a></li>
+                </ul>
+			</div>
+		</div>
+		<!--主题部分-->
+		<div id="main" class="margin">
+			<!--吸顶条占位置，默认隐藏-->
+			<div class="nowday"> 
+				<div class="today_tit">
+					<ul class="today-list">
+						<li class="active"><a href="#" target="_blank">全部</a></li>
+						<li><a href="#" target="_blank">手机通讯33</a></li>
+						<li><a href="#" target="_blank">数码影像29</a></li>
+						<li><a href="#" target="_blank">笔记本/电脑22</a></li>
+                        <li><a href="#" target="_blank">电脑外设15</a></li>
+                        <li><a href="#" target="_blank">DIY主机/配件21</a></li>
+                        <li><a href="#" target="_blank">家电/其他3</a></li>
+                        <li><a href="#" target="_blank">智能生活3</a></li>
+					</ul>
+				</div>
+				<div class="day-down marginT">
+					<ul class="sorts clear">
+						<li class="default active"><a href="javascript:;">默认</a></li>
+						<li><a href="javascript:;">最新团购</a></li>
+						<li><a href="javascript:;">销量<b class="arrow-down"></b></a></li>
+						<li><a href="javascript:;">价格<b class="arrow-down"></b></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--商品列表-->
+			<ul class="goods goods-first clear">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				
+				<!--<li>
+					<div class="pic">
+						<img class="pic-img" src="img/sp1.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑 黑色">【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑 黑色</a>
+                    </h4>
+                    <span class="msg"></span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>4788</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥4888</p>
+                            <span class="discount">立省100元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/sp2.png"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="【下单立减】戴尔 Inspiron 灵越 14 7000 游匣热血魂 14-7466-R1545B 黑色">【下单立减】戴尔 Inspiron 灵越 14 7000 游匣热血魂 14-7466-R1545B 黑色</a>
+                    </h4>
+                    <span class="msg">i5四核+4G独显 炫酷外观</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>4199</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥5188</p>
+                            <span class="discount">立省989元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/sp3.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="【三星授权专卖 顺丰包邮】三星 Gear S2 R720智能手表可兼容安卓手机 素铅灰">【三星授权专卖 顺丰包邮】三星 Gear S2 R720智能手表可兼容安卓手机 素铅灰</a>
+                    </h4>
+                    <span class="msg">可兼容安卓手机、素铅灰，雪慕银</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>999</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥2239</p>
+                            <span class="discount">立省1240元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/sp4.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="vivo X9（全网通） 金色 行货64GB">vivo X9（全网通） 金色 行货64GB</a>
+                    </h4>
+                    <span class="msg"></span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>2450</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥2798</p>
+                            <span class="discount">立省348元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/sp5.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="【顺丰包邮】惠普 Pavilion 14-AL125TX（Y8J73PA）轻薄便携本 酷睿I5-7200U 8G内存 256G SSD固态硬盘 GT940M-2G游戏显卡 银色">【顺丰包邮】惠普 Pavilion 14-AL125TX（Y8J73PA）轻薄便携本 酷睿I5-7200U 8G内存 256G SSD固态硬盘 GT940M-2G游戏显卡 银色</a>
+                    </h4>
+                    <span class="msg">全能学习本 固态独显 新品台</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>4699</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥4949</p>
+                            <span class="discount">立省250元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/sp6.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="苹果 iPad Air 2（128GB/WiFi版） 金色">苹果 iPad Air 2（128GB/WiFi版） 金色</a>
+                    </h4>
+                    <span class="msg"></span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>3188</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥4500</p>
+                            <span class="discount">立省1312元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/sp7.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="联想 IdeaPad 710S-13（i5 7200U/8GB/256GB） I5-7200U-8G-256G-W10银色">联想 IdeaPad 710S-13（i5 7200U/8GB/256GB） I5-7200U-8G-256G-W10银色</a>
+                    </h4>
+                    <span class="msg">七代I5 8G内存</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>4999</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥5099</p>
+                            <span class="discount">立省100元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/sp8.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="影驰 GeForce GTX 1060大将 红色">影驰 GeForce GTX 1060大将 红色</a>
+                    </h4>
+                    <span class="msg">1060大将全国联保手慢则无。</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>1619</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥1652</p>
+                            <span class="discount">立省33元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>-->
+			</ul>
+			<ul class="goods clear">
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/cont1.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="【三星授权专卖 顺丰包邮】三星 Gear S2 R720智能手表可兼容安卓手机 素铅灰">【三星授权专卖 顺丰包邮】三星 Gear S2 R720智能手表可兼容安卓手机 素铅灰</a>
+                    </h4>
+                    <span class="msg">可兼容安卓手机、素铅灰，雪慕银</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>999</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥2239</p>
+                            <span class="discount">立省1214元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/cont2.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="vivo X9（全网通） 金色 行货64GB">vivo X9（全网通） 金色 行货64GB</a>
+                    </h4>
+                    <span class="msg"></span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>2450</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥2789</p>
+                            <span class="discount">立省320元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/cont3.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="【顺丰包邮】惠普 Pavilion 14-AL125TX（Y8J73PA）轻薄便携本 酷睿I5-7200U 8G内存 256G SSD固态硬盘 GT940M-2G游戏显卡 银色">【顺丰包邮】惠普 Pavilion 14-AL125TX（Y8J73PA）轻薄便携本 酷睿I5-7200U 8G内存 256G SSD固态硬盘 GT940M-2G游戏显卡 银色</a>
+                    </h4>
+                    <span class="msg">全能学习本 固态独显 新品台</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>4699</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥4949</p>
+                            <span class="discount">立省250元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/cont4.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="名龙堂 撸神机 I5 7500/GTX1060台式电脑主机LOL/OW游戏神机 自定义">名龙堂 撸神机 I5 7500/GTX1060台式电脑主机LOL/OW游戏神机 自定义</a>
+                    </h4>
+                    <span class="msg">免费升级256G M.2 SSD</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>4488</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥4499</p>
+                            <span class="discount">立省11元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+			</ul>
+			<ul class="goods clear">
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/xl1.png"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="【下单立减】戴尔 Inspiron 灵越 14 7000 游匣热血魂 14-7466-R1545B 黑色">【下单立减】戴尔 Inspiron 灵越 14 7000 游匣热血魂 14-7466-R1545B 黑色</a>
+                    </h4>
+                    <span class="msg">i5四核+4G独显 炫酷外观</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>4199</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥5188</p>
+                            <span class="discount">立省999元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/xl2.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="vivo X9 Plus（全网通） 金色 行货64GB">vivo X9 Plus（全网通） 金色 行货64GB</a>
+                    </h4>
+                    <span class="msg"></span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>2958</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥3298</p>
+                            <span class="discount">立省320元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/xl3.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="联想ZUK Z2 4GB+64GB  白色  顺丰包邮 行货64GB">联想ZUK Z2 4GB+64GB  白色  顺丰包邮 行货64GB</a>
+                    </h4>
+                    <span class="msg">全能学习本 固态独显 新品台</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>1249</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥1309</p>
+                            <span class="discount">立省50元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/xl4.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="浦科特 M7VC 128G SATA3固态硬盘 红色">浦科特 M7VC 128G SATA3固态硬盘 红色</a>
+                    </h4>
+                    <span class="msg">免费升级256G M.2 SSD</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>399</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥459</p>
+                            <span class="discount">立省60元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/xl1.png"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="【下单立减】戴尔 Inspiron 灵越 14 7000 游匣热血魂 14-7466-R1545B 黑色">【下单立减】戴尔 Inspiron 灵越 14 7000 游匣热血魂 14-7466-R1545B 黑色</a>
+                    </h4>
+                    <span class="msg">i5四核+4G独显 炫酷外观</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>4199</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥5188</p>
+                            <span class="discount">立省999元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/xl2.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="vivo X9 Plus（全网通） 金色 行货64GB">vivo X9 Plus（全网通） 金色 行货64GB</a>
+                    </h4>
+                    <span class="msg"></span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>2958</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥3298</p>
+                            <span class="discount">立省320元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/xl3.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="联想ZUK Z2 4GB+64GB  白色  顺丰包邮 行货64GB">联想ZUK Z2 4GB+64GB  白色  顺丰包邮 行货64GB</a>
+                    </h4>
+                    <span class="msg">全能学习本 固态独显 新品台</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>1249</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥1309</p>
+                            <span class="discount">立省50元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/xl4.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="浦科特 M7VC 128G SATA3固态硬盘 红色">浦科特 M7VC 128G SATA3固态硬盘 红色</a>
+                    </h4>
+                    <span class="msg">免费升级256G M.2 SSD</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>399</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥459</p>
+                            <span class="discount">立省60元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+			</ul>
+			<ul class="goods clear">
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/price1.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="海鸥 58MM UV 黑色">海鸥 58MM UV 黑色</a>
+                    </h4>
+                    <span class="msg">双面抗反射镀膜滤除紫外线 高透光</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>16</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥17</p>
+                            <span class="discount">立省1元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/price2.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="包邮 摩豹G370无线鼠标 2.4G无线技术 10米自由操控 零延迟 智能省电 送电池 白色 ">包邮 摩豹G370无线鼠标 2.4G无线技术 10米自由操控 零延迟 智能省电 送电池 白色 </a>
+                    </h4>
+                    <span class="msg">智能节电 送电池</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>19</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥29</p>
+                            <span class="discount">立省10元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/price3.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="火柴人 HK06 黑色">火柴人 HK06 黑色</a>
+                    </h4>
+                    <span class="msg">实用更时尚！火柴人品质保证！</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>38</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥95</p>
+                            <span class="discount">立省57元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/xl4.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="小米 智能手环 心率手环（黑色腕带） 石墨黑">小米 智能手环 心率手环（黑色腕带） 石墨黑</a>
+                    </h4>
+                    <span class="msg"></span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>59</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥69</p>
+                            <span class="discount">立省10元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/price2.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="包邮 摩豹G370无线鼠标 2.4G无线技术 10米自由操控 零延迟 智能省电 送电池 白色 ">包邮 摩豹G370无线鼠标 2.4G无线技术 10米自由操控 零延迟 智能省电 送电池 白色 </a>
+                    </h4>
+                    <span class="msg">智能节电 送电池</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>19</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥29</p>
+                            <span class="discount">立省10元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/price3.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="火柴人 HK06 黑色">火柴人 HK06 黑色</a>
+                    </h4>
+                    <span class="msg">实用更时尚！火柴人品质保证！</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>38</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥95</p>
+                            <span class="discount">立省57元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/price2.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="包邮 摩豹G370无线鼠标 2.4G无线技术 10米自由操控 零延迟 智能省电 送电池 白色 ">包邮 摩豹G370无线鼠标 2.4G无线技术 10米自由操控 零延迟 智能省电 送电池 白色 </a>
+                    </h4>
+                    <span class="msg">智能节电 送电池</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>19</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥29</p>
+                            <span class="discount">立省10元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+				<li>
+					<div class="pic">
+						<img class="pic-img" src="img/price3.jpg"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="day">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="火柴人 HK06 黑色">火柴人 HK06 黑色</a>
+                    </h4>
+                    <span class="msg">实用更时尚！火柴人品质保证！</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>38</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥95</p>
+                            <span class="discount">立省57元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>
+			</ul>
+            <!--分页-->
+            <div class="page">
+                <span class="sel pageall">1</span>
+                <a class="pageall" href="javascript:;" target="_self">2</a>
+                <a class="pageall" href="javascript:;" target="_self">3</a>
+                <span>...</span>
+                <a class="pageall" href="javascript:;" target="_self">5</a>
+                <a class="pageall" href="javascript:;" class="next" target="_self">下一页</a>                        
+            </div>
+            
+		</div>
+		<!--底部-->
+		<div id="footer-top">
+			<div class="foot-top-cen margin clear">
+				<dl>
+					<dt>购物指南</dt>
+					<dd><a href="#" target="_blank">购物流程</a></dd>
+					<dd><a href="#" target="_blank">优惠券红包</a></dd>
+					<dd><a href="#" target="_blank">常见问题</a></dd>
+				</dl>
+				<dl>
+					<dt>售后服务</dt>
+					<dd><a href="#" target="_blank">申请退款</a></dd>
+					<dd><a href="#" target="_blank">售后政策</a></dd>
+					<dd><a href="#" target="_blank">售后问题</a></dd>
+				</dl>
+				<dl>
+					<dt>团购特点</dt>
+					<dd><a href="#" target="_blank">Z团优势</a></dd>
+					<dd><a href="#" target="_blank">参团效果</a></dd>
+					<dd><a href="#" target="_blank">往期团购</a></dd>
+				</dl>
+				<dl>               
+					<dt>商务合作</dt>
+					<dd><a href="#" target="_blank">媒体合作</a></dd>
+					<dd><a href="#" target="_blank">团购合作</a></dd>
+				</dl>
+				<dl>
+					<dt>商城服务</dt>
+					<dd>400-688-1999</dd>
+					<dd>工作日(9:00-18:00)</dd>
+                    <dd><a href="#" target="_blank" class="sina">关注新浪微博</a></dd>
+				</dl>
+				<div class="foot-scan">
+					<p class="code"><img src="img/gaonana.png" alt=""/></p>
+					<p> 微信关注：ZOL商城</p>
+                    <p>扫码赢优惠&nbsp;订单时时查</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer-bottom">
+			<div class="foot-bot-cen margin">
+				<div class="partner">
+					<span>合作伙伴：</span>
+					<p>
+                        <a href="#" target="_blank">卷皮网</a>|
+                        <a href="#" target="_blank">电子商务平台</a>|
+                        <a href="#" target="_blank">中国电子银行网</a>|
+                        <a href="#" target="_blank">华为商城</a>|
+                        <a href="#" target="_blank">三帝贸易网</a>|
+                        <a href="#" target="_blank">团购</a>|
+                        <a href="#" target="_blank">eNet商城</a>|
+                        <a href="#" target="_blank">易趣</a>|
+                        <a href="#" target="_blank">家具网</a>|
+                        <a href="#" target="_blank">手表品牌大全</a>|
+                        <a href="#" target="_blank">钻石</a>|
+                        <a href="#" target="_blank">伊秀女性网</a>|
+                        <a href="#" target="_blank">华强电子网</a>|
+                        <a href="#" target="_blank">电子产品世界</a>|
+                        <a href="#" target="_blank">挖东西比价网</a>|
+                        <a href="#" target="_blank">广告网</a>|
+                        <a href="#" target="_blank">易购网</a>|
+                    </p>
+				</div>
+				<div class="footer-nav">
+					<a href="#">中关村在线</a>|
+					<a href="#">NN商城</a>|
+					<a href="#">N团</a>|
+					<a href="#">限时抢购</a>|
+					<a href="#">经销商</a>|
+					<a href="#">产品报价</a>|
+					<a href="#">论坛</a>|
+					<a href="#">问答</a>
+				</div>
+				<div class="copyright">
+                    <a href="#" target="_blank">关于ZOL商城</a>|
+                    <a href="#" target="_blank">帮助中心</a>|
+                    <a href="#" target="_blank">联系我们</a>|
+                    <a href="#" target="_blank">发展历程</a>|
+                    <a href="#" target="_blank">媒体报道</a>
+                    <p>
+                    	©2016 中关村在线 版权所有.<a href="#">京ICP证150096号</a>&nbsp;&nbsp; 京ICP备14061128号 &nbsp;&nbsp;<a href="#">京公网安备11010802020026号</a><a href="#">网络文化经营许可证京网文[2016]1631-199</a>
+                    </p>
+                </div>
+			</div>
+		</div>
+		<ul class="right-fixed">
+			<li>
+				<a href="javascript:;">客户服务</a>
+				<div class="right-code">
+					<p class="r-f-pic">
+						<img src="img/gaonana.png" alt="" width="106px" height="106px">
+					</p>
+					<p>扫码咨询在线客服</p>
+					<p class="r-f-phone">客服电话</p>
+					<p class="r-f-num">400-688-1999</p>
+				</div>
+			</li>
+			<li><a href="#">意见反馈</a></li>
+			<li class="up">
+				<a href="javascript:;">
+					<i></i>
+				</a>
+			</li>
+		</ul>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="public/single.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/single_picload.js" type="text/javascript" charset="utf-8"></script>-->
+	</body>
+</html>

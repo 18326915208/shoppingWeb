@@ -1,0 +1,9 @@
+require("./index_login.js");
+require("./index_head.js");
+require("./index_nav.js");
+require("./index_banner.js");
+require("./index_nowdayteam.js");
+require("./index_xiding-tuangou_change.js");
+require("./index_fixedright.js");
+require("./index_picload.js");
+require("./index-openteam.js");

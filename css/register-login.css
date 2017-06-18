@@ -1,0 +1,353 @@
+@charset "UTF-8";
+.margin {
+  width: 990px;
+  margin: 0 auto; }
+
+img {
+  border: 0; }
+
+.header {
+  padding: 20px 0; }
+  .header .header_l a .logo {
+    float: left; }
+  .header .header_l a p {
+    float: left;
+    margin: 8px 0 0 8px;
+    padding-left: 10px;
+    font: 14px/44px simsun;
+    color: #666;
+    border-left: 1px solid #e6e6e6; }
+  .header .header_r {
+    padding: 21px 0 0;
+    font: 14px/22px "微软雅黑"; }
+    .header .header_r a {
+      height: 16px;
+      padding: 3px 10px;
+      color: #c00;
+      font: normal 14px/14px "Microsoft YaHei"; }
+      .header .header_r a:hover {
+        background: #c00;
+        color: #fff; }
+
+.reg-main {
+  padding: 0 0 100px;
+  border: 1px solid #e6e6e6; }
+  .reg-main .title {
+    padding: 16px 0 16px 90px;
+    background: #fafafa;
+    font: 18px/28px "Microsoft YaHei";
+    color: #999; }
+  .reg-main .register-module {
+    padding: 30px 0 0 89px;
+    width: 500px; }
+    .reg-main .register-module .register-tab {
+      height: 39px;
+      border-bottom: 1px solid #e6e6e6; }
+      .reg-main .register-module .register-tab li {
+        float: left;
+        position: relative;
+        margin: 0 -1px;
+        width: 250px;
+        border: 1px solid #e6e6e6;
+        border-bottom: 0 none;
+        background: #fafafa;
+        text-align: center;
+        cursor: pointer; }
+        .reg-main .register-module .register-tab li span {
+          display: inline-block;
+          font: 18px/38px "Microsoft YaHei";
+          background: url(../detailpageimg/login-bg.png) no-repeat; }
+        .reg-main .register-module .register-tab li .phone-number {
+          padding: 0 0 0 20px; }
+      .reg-main .register-module .register-tab .current {
+        margin: 0 -1px -1px;
+        padding: 0 0 2px;
+        border-top: 2px solid #e02d2d;
+        background: #fff;
+        cursor: default; }
+        .reg-main .register-module .register-tab .current span {
+          color: #c00;
+          line-height: 36px; }
+        .reg-main .register-module .register-tab .current .phone-number {
+          background-position: -158px -235px; }
+    .reg-main .register-module .register-phone-number {
+      padding: 30px 0 0; }
+      .reg-main .register-module .register-phone-number .register-form {
+        position: relative;
+        margin: 0 0 42px;
+        padding: 0 0 0 83px; }
+        .reg-main .register-module .register-phone-number .register-form .label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 83px;
+          font: 14px/40px "Arial";
+          text-align: right;
+          color: #666; }
+          .reg-main .register-module .register-phone-number .register-form .label .xh {
+            padding: 0 7px 0 0;
+            font: 12px "Simsun";
+            color: #f30; }
+        .reg-main .register-module .register-phone-number .register-form .text {
+          display: block;
+          margin: 0 10px 0 0;
+          padding: 8px 5px;
+          width: 278px;
+          height: 22px;
+          border: 1px solid #ccc; }
+        .reg-main .register-module .register-phone-number .register-form .right-tips3, .reg-main .register-module .register-phone-number .register-form .right-tips2, .reg-main .register-module .register-phone-number .register-form .right-tips1, .reg-main .register-module .register-phone-number .register-form .right-tips {
+          display: none;
+          position: absolute;
+          top: 12px;
+          left: 383px;
+          width: 15px;
+          height: 15px;
+          font: 0/0 "Arial";
+          background: url(../detailpageimg/login-bg.png) no-repeat;
+          background-position: -155px -162px; }
+        .reg-main .register-module .register-phone-number .register-form .wrong_pwd2, .reg-main .register-module .register-phone-number .register-form .wrong_pwd, .reg-main .register-module .register-phone-number .register-form .wrong_massage.wrong_code, .reg-main .register-module .register-phone-number .register-form .wrong_phone, .reg-main .register-module .register-phone-number .register-form .wrong-tips {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 383px;
+          padding: 0 0 0 20px;
+          font: 12px/40px "Arial";
+          color: #ff3333;
+          background: url(../detailpageimg/login-bg.png) no-repeat;
+          background-position: -155px -184px;
+          white-space: nowrap; }
+        .reg-main .register-module .register-phone-number .register-form .right_code {
+          left: 410px; }
+        .reg-main .register-module .register-phone-number .register-form .tips {
+          position: absolute;
+          top: 47px;
+          left: 83px;
+          color: #aaa; }
+        .reg-main .register-module .register-phone-number .register-form .email-captcha .text {
+          float: left;
+          width: 158px; }
+        .reg-main .register-module .register-phone-number .register-form .captcha-img {
+          float: left;
+          margin: 0 10px 0 0;
+          width: 98px;
+          height: 38px;
+          font-size: 30px;
+          font-family: "arial, helvetica, sans-serif";
+          border: 1px solid #ccc;
+          background: #f99;
+          text-align: center; }
+          .reg-main .register-module .register-phone-number .register-form .captcha-img .capt_code {
+            display: none; }
+        .reg-main .register-module .register-phone-number .register-form .captcha-change {
+          float: left;
+          font: 12px/40px "Arial";
+          color: #134ba0; }
+        .reg-main .register-module .register-phone-number .register-form .sms-captcha .text {
+          float: left;
+          width: 158px; }
+        .reg-main .register-module .register-phone-number .register-form .sms-captcha .get-captcha {
+          float: left;
+          width: 110px;
+          height: 40px;
+          border: 0 none;
+          background-position: 0 -148px;
+          font: 12px/40px "Arial";
+          color: #666;
+          cursor: pointer;
+          background: #f8f8f8;
+          border: 1px solid #ccc; }
+      .reg-main .register-module .register-phone-number .agreement {
+        display: block;
+        padding: 0 0 0 83px;
+        height: 32px;
+        font: 12px/32px "Arial";
+        color: #999; }
+        .reg-main .register-module .register-phone-number .agreement input {
+          margin: 0 8px 0 0; }
+      .reg-main .register-module .register-phone-number .register-btn {
+        display: block;
+        margin: 20px 0 0 83px;
+        width: 290px;
+        height: 40px;
+        font: bold 14px/40px "Arial";
+        color: #fff;
+        text-align: center;
+        border: 0 none;
+        background-position: 0 0;
+        cursor: pointer;
+        background: url(../detailpageimg/bg.png) no-repeat; }
+        .reg-main .register-module .register-phone-number .register-btn:hover {
+          background: url(../detailpageimg/bg.png) no-repeat 0 -41px; }
+  .reg-main a {
+    color: #134ba0; }
+    .reg-main a:hover {
+      color: #c00;
+      text-decoration: underline; }
+  .reg-main .fast-login {
+    margin: 30px 0 0;
+    padding: 0 80px 0 25px;
+    width: 170px;
+    border-left: 1px solid #f5f5f5; }
+    .reg-main .fast-login p {
+      margin: -6px 0 0;
+      font: 12px/24px "Arial";
+      color: #666; }
+      .reg-main .fast-login p a {
+        margin: 0 6px; }
+    .reg-main .fast-login .fast-login-list a {
+      display: block;
+      margin: 15px 0 0;
+      width: 170px;
+      height: 36px;
+      text-indent: -9999em;
+      overflow: hidden;
+      background: url(../detailpageimg/login-bg.png) no-repeat; }
+    .reg-main .fast-login .fast-login-list a.weixin {
+      background: url(../detailpageimg/l-weixin.png) no-repeat;
+      background-size: 100%; }
+    .reg-main .fast-login .fast-login-list a.sina {
+      background-position: 0 0; }
+    .reg-main .fast-login .fast-login-list a.qq {
+      background-position: 0 -37px; }
+    .reg-main .fast-login .fast-login-list a.alipay {
+      background-position: 0 -74px; }
+    .reg-main .fast-login .fast-login-list a.baidu {
+      background-position: 0 -111px; }
+
+.login-warp {
+  margin-top: 30px;
+  border: 1px solid #e6e6e6;
+  background: #fff; }
+  .login-warp .login-r {
+    padding: 0 85px 0 0;
+    width: 290px; }
+    .login-warp .login-r .login-head {
+      position: relative;
+      padding: 20px 0 0; }
+      .login-warp .login-r .login-head h3 {
+        height: 28px;
+        overflow: hidden;
+        font: 18px/28px "Microsoft YaHei";
+        color: #666; }
+      .login-warp .login-r .login-head .mobile {
+        float: right;
+        padding: 0 0 0 17px;
+        background: url(../detailpageimg/login-bg1.png) no-repeat -276px -112px;
+        color: #333;
+        line-height: 28px; }
+        .login-warp .login-r .login-head .mobile:hover {
+          color: #c00;
+          text-decoration: underline; }
+    .login-warp .login-r .denglu {
+      padding: 30px 0 0;
+      position: relative; }
+      .login-warp .login-r .denglu .denglu_wrong {
+        display: none;
+        position: absolute;
+        top: 1px;
+        left: 0;
+        padding: 0 0 0 25px;
+        width: 263px;
+        height: 22px;
+        font: 12px/22px "Arial";
+        color: #f33;
+        border: 1px solid #f99;
+        background: #fff2f2 url(../detailpageimg/bg.png) no-repeat -270px -89px; }
+      .login-warp .login-r .denglu .form-item {
+        position: relative;
+        margin: 0 0 7px;
+        height: 38px; }
+        .login-warp .login-r .denglu .form-item .text {
+          display: block;
+          width: 278px;
+          height: 22px;
+          padding: 8px 5px;
+          font: 14px/22px "Arial";
+          border: 1px solid #ccc; }
+      .login-warp .login-r .denglu .form-other {
+        line-height: 35px;
+        height: 35px; }
+        .login-warp .login-r .denglu .form-other a {
+          float: right; }
+      .login-warp .login-r .denglu .login_btn {
+        display: block;
+        margin: 0 0 10px;
+        width: 290px;
+        height: 40px;
+        font: bold 14px/40px "Arial";
+        color: #fff;
+        text-align: center;
+        border: 0 none;
+        background-position: 0 0;
+        background: url(../detailpageimg/bg.png) no-repeat; }
+        .login-warp .login-r .denglu .login_btn:hover {
+          background: url(../detailpageimg/bg.png) no-repeat 0 -41px; }
+    .login-warp .login-r .partner-d {
+      width: 290px;
+      text-align: center;
+      margin-top: 15px;
+      color: #666666; }
+      .login-warp .login-r .partner-d p {
+        float: left; }
+      .login-warp .login-r .partner-d .xian {
+        float: left;
+        height: 1px;
+        background: #f0f0f0;
+        width: 100px;
+        margin-top: 7px; }
+      .login-warp .login-r .partner-d .xian:first-child {
+        margin-right: 9px; }
+      .login-warp .login-r .partner-d .xian:last-child {
+        margin-left: 9px; }
+    .login-warp .login-r .login-foot {
+      margin-top: 10px; }
+      .login-warp .login-r .login-foot .weixin {
+        float: left;
+        margin: 0 12px 0 25px;
+        width: 38px;
+        height: 38px;
+        text-indent: -9999em;
+        overflow: hidden;
+        background: url(../detailpageimg/login-weixin.png) 0 0 no-repeat; }
+        .login-warp .login-r .login-foot .weixin:hover {
+          background: url(../detailpageimg/login-weixin.png) no-repeat 0 -38px; }
+      .login-warp .login-r .login-foot a {
+        float: left;
+        margin: 0 12px 0 0;
+        width: 38px;
+        height: 38px;
+        text-indent: -9999em;
+        overflow: hidden;
+        background: url(../detailpageimg/bg.png) no-repeat; }
+      .login-warp .login-r .login-foot .sina {
+        background-position: 0 -82px; }
+        .login-warp .login-r .login-foot .sina:hover {
+          background-position: 0 -120px; }
+      .login-warp .login-r .login-foot .qq {
+        background-position: -39px -82px; }
+        .login-warp .login-r .login-foot .qq:hover {
+          background-position: -39px -120px; }
+      .login-warp .login-r .login-foot .alipay {
+        background-position: -78px -82px; }
+        .login-warp .login-r .login-foot .alipay:hover {
+          background-position: -78px -120px; }
+      .login-warp .login-r .login-foot .baidu {
+        background-position: -117px -82px; }
+        .login-warp .login-r .login-foot .baidu:hover {
+          background-position: -117px -120px; }
+
+.footer {
+  margin: 50px 0 0;
+  padding: 12px 0 25px;
+  border-top: 1px solid #dcdcdc; }
+  .footer .about {
+    margin: 0 0 0 -10px;
+    color: #ccc; }
+    .footer .about a {
+      margin: 0 10px;
+      color: #666; }
+      .footer .about a:hover {
+        color: #c00;
+        text-decoration: underline; }
+  .footer .copyright {
+    color: #666; }

@@ -1,0 +1,9 @@
+require("./index_login.js");
+require("./while-team-head.js");
+require("./while-team-nav.js");
+require("./single-fenye.js");
+//require("./single_picload.js");
+require("./index_picload.js");
+require("./index_fixedright.js");
+require("./index_nowdayteam.js");
+require("./index_xiding-tuangou_change.js");

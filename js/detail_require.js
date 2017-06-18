@@ -1,0 +1,13 @@
+require("./index_login.js");
+require("./detailpage.js");
+require("./while-team-nav.js");
+require("./detailpage-fangdajing.js");
+require("./detailpage-show.js");
+require("./detailpage-hot.js");
+require("./detailpage-shoptab.js");
+require("./detailpage-shopcart.js");
+require("./detailpage-area.js");
+require("./detailpage-xiding.js");
+require("./detailpage-rightfixed.js");
+require("./detailpage-login.js");
+require("./detailpage-buy.js");

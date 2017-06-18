@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>NN收银台</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/paymoney.css"/>
+	</head>
+	<body>
+		<div class="public_top">
+			<div class="margin">
+				<div class="pbl_hed_left l">
+					<a href="index.html" class="hover_red">商城首页</a>
+					<span></span><a href="login.html" id="loginNow" class="bule_a hover_red">登录</a>
+				</div>
+				<div class="pbl_hed_right r">
+					<a href="#" class="hover_red">我的订单</a>
+					<a href="#" class="hover_box_font">买家中心<i></i>
+						<b class="box_font_cont">
+							<p href="#">关注的店铺<em>30</em></p>
+							<p href="#">关注的商品<em>8</em></p>
+						</b>
+					</a>
+					<a href="#" class="hover_red">购物车1件</a>
+					<a href="helpcenter.html" class="hover_red">帮助中心</a>
+					<span>|</span>
+					<a href="#" class="hover_box"><s></s>手机商城<i></i>
+						<img src="img/gaonana.png" class="top_qr_code"/>
+					</a>
+					<a href="#" class="hover_red">中关村在线</a>
+					<a href="#" class="hover_red">商家入驻</a>
+					<a href="#" class="hover_box_phone">联系客服<i></i>
+						<p class="top_box_p">400-50064892</p>
+					</a>
+				</div>	
+			</div>
+		</div>
+		<!--logo-->
+		<div class="header margin clear">
+			<a href="index.html"><img class="logo" src="detailpageimg/logo2.png"/></a>
+			<span class="title">收银台</span>
+		</div>
+		<div class="wrapper margin">
+			<div class="payment-box">
+				<div class="order-status-box">
+					<div class="submit-complete clear">
+						<div class="order-status">
+							<h3 class="prompt">订单已提交，请在<span>24小时</span>内完成付款（逾期自动取消）</h3>
+							<div class="details">
+								<p> <span>您的订单号：2017051116081517175494</span>  <span class="label">商品名称：【限时特惠 顺丰包邮】联想(Lenovo)ideapad等</span></p>
+								<p><span>收货人：s等等</span><span>18326915208</span> <span class="label">收货地址：/属性撒无无无无无 </span></p>
+							</div>
+						</div>
+						<div class="amount-code">
+							<div class="code">
+								<div class="code-innder">
+									<!-- 淘宝二维码 -->
+									<img src="helpimg/f.jpg" width="75px" id="qrcode-ali" height="75px" />
+									<span style="color: #333;" class="code-name">支付宝扫码支付</span> 
+								</div>
+							</div>
+							<div class="price">应付金额<span>4599.00 </span>元</div>
+						</div>
+					</div>
+				</div>
+				<div class="payment-way"><dl class="third-party payment-selected" id="thirdpaySpanDiv">
+							<dt id="third_dt"><span id="third_span" class="radiobox radiobox-selected"></span>第三方支付平台：</dt>
+							<dd class="clear">
+								<div id="ali_way_selected" class="way-selected">
+									<a href="javascript:void(0);" class="classa selected" id="alipay_span">
+										<img src="https://cashier.zol.com/paygate/mix/images/alipay.png" width="138" height="38">
+									</a> 
+									<a href="javascript:void(0);" class="classa" id="wxpay_span">
+										<img src="https://cashier.zol.com/paygate/mix/images/weixin.png" width="138" height="38">
+									</a>
+								<span id="pay_amount_span" class="pay-amount" style="">支付<em>4599.00</em>元</span></div>
+							</dd>
+						</dl>
+					<!-- ----------------第三方支付----------------------- -->
+					
+					<!------------------------------ 独立出快捷支付 -------------------------------------->
+					<dl id="bankPayDl" class="third-party">
+						<dt id="bank_dt" style="width:914px;">
+							 <span class="radiobox" id="bank_span"></span>
+		                     <span class="radioname">银行卡支付：</span>
+						</dt>
+						<!--上次使用的银行卡-->
+						<dd id="bank_clear" class="clear" style="display: none;">
+						</dd>
+							<!--新银行卡对应的银行信息-->
+						<dd id="bank_dd" class="bank-box" style="display: none;">
+							<ul class="tab-bar clear">
+								<li id="bank_pay_li">储蓄卡网银</li>
+								<li id="moto_pay_li">信用卡</li>
+								
+							</ul>
+							<!-- 支付宝网银 -->
+							<div class="bank-list clear" id="bank_pay_list" style="display: none;"> 
+								<div class="bank-index">
+									<a data-type="ICBC-DEBIT" class="gongshang"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="ABC" class="nongye"></a> 
+									<p class="index-text">储蓄卡</p>
+		                   		</div>
+		                   		<div class="bank-index">
+									<a data-type="CMB-DEBIT" class="zhaoshang"></a> 
+									<p class="index-text">储蓄卡</p>
+		                   		</div>
+		                   		<div class="bank-index">
+									<a data-type="CCB-DEBIT" class="jianshe"></a> 
+									<p class="index-text">储蓄卡</p>
+		                   		</div>
+		                   		<div class="bank-index">
+									<a data-type="CIB" class="xingye"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="CMBC" class="minsheng"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="BOC-DEBIT" class="zhongguo"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="SHRCB" class="sh-nongshang"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="COMM-DEBIT" class="jiaotong"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="PSBC-DEBIT" class="youzheng"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="BJBANK" class="beijing"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="BJRCB" class="bj-nongshang"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="HZCBB2C" class="hangzhou"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="NBBANK" class="ningbo"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="SHBANK" class="shanghai"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="SPA-DEBIT" class="pingan"></a> 
+									<p class="index-text">储蓄卡</p>
+			                   	</div>	
+							</div>
+							<!-- 支付宝慧付宝组合网银 -->
+							<div class="bank-list clear" id="moto_pay_list" style="display: none;"> 
+								<div class="bank-index">
+									<a data-type="CMB" class="zhaoshang"></a> 
+									<p class="index-text">信用卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="CCB" class="jianshe"></a> 
+									<p class="index-text">信用卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="ICBCB2C" class="gongshang"></a> 
+									<p class="index-text">信用卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="BOCB2C" class="zhongguo"></a> 
+									<p class="index-text">信用卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="ABC" class="nongye"></a> 
+									<p class="index-text">信用卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="SPABANK" class="pingan"></a> 
+									<p class="index-text">信用卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="CIB" class="xingye"></a> 
+									<p class="index-text">信用卡</p>
+			                   	</div>	
+			                   	<div class="bank-index">
+									<a data-type="GDB" class="gd-fazhan"></a> 
+									<p class="index-text">信用卡</p>
+			                   	</div>	
+							</div>
+						</dd>
+					</dl>
+					<div id="operation_div" class="operation  clear">
+						<span id="not_pay_submit" class="pay-submit-btn" style="display: none;">立即支付</span> 
+						<a href="javascript:void(0)" target="_blank" id="can_pay_submit" style="display: block;" class="pay-submit-btn">立即支付</a> 
+						<span id="not_bind_submit" class="pay-submit-btn" style="display:none;">绑定并支付</span>
+						<a href="javascript:void(0)" id="can_bind_submit" style="display:none;" class="pay-submit-btn">绑定并支付</a> 
+						<span class="pay-info" style="display:none;">请核实银行卡信息，如卡号、身份证号、手机号、姓名。</span>
+						<span class="select-banks" style="display:none;">请选择银行</span>
+						<span id="can_pay_tips" class="tips" style="color:#F60">
+							提示： 若订单金额大于您的网络支付单笔交易限额，您可以拍下多个订单，并致电客服给您拆单再进行分单付款，客服电话400-688-1999；
+						</span>	
+					</div>
+					<div class="pay-problem">
+							<h4>常见支付问题</h4>
+							<ol>
+								<li>
+									<h5>1. 支付金额超过网银支付的单笔限额怎么办?</h5>
+									<p>若支付金额超过您的网银单笔交易限额，您可以下多个订单，并致电客服400-688-1999，由我们客服给您拆单再进行分单付款；或致电银行取消限额。</p>
+								</li>
+								<li>
+									<h5>2. 网上银行/支付宝/微信已扣款有消费记录，但订单上还显示"等待买家付款" ?</h5>
+									<p>出现此问题，可能是银行/支付宝/财付通的数据没有即时传输至我们收银台，请您第一时间与我们客服联系400-688-1999告知订单信息，我们将协助您解决。</p>
+								</li>
+								<li>
+									<h5>3. 支付宝余额有足额的金额，却无法用余额付款</h5>
+									<p>可能由于您支付宝账户没有实名认证，建议您去支付宝网页申请实名认证。</p>
+								</li>
+							</ol>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+		<script src="public/paymoney.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

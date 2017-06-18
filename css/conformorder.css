@@ -1,0 +1,552 @@
+@charset "UTF-8";
+body, html {
+  height: 100%; }
+
+.margin {
+  width: 960px;
+  margin: 0 auto; }
+
+.bule_a {
+  color: #36c; }
+
+a:hover {
+  color: #c00;
+  text-decoration: underline; }
+
+.public_top {
+  height: 30px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e6e6e6;
+  font: 12px/30px "微软雅黑"; }
+  .public_top .pbl_hed_left a {
+    margin-right: 20px; }
+  .public_top .pbl_hed_right a {
+    padding: 0 10px;
+    height: 30px;
+    display: inline-block; }
+  .public_top .pbl_hed_right s {
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -3px;
+    background: url(../detailpageimg/top_ico.png) no-repeat;
+    background-position: -10px -6px;
+    margin-right: 5px; }
+  .public_top .pbl_hed_right span {
+    color: #ccc; }
+  .public_top .pbl_hed_right .hover_box_font {
+    position: relative;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5; }
+    .public_top .pbl_hed_right .hover_box_font .box_font_cont {
+      display: none;
+      width: 100px;
+      position: absolute;
+      left: 0;
+      top: 30px;
+      z-index: 100;
+      background: #fff;
+      border: 1px solid #ccc;
+      color: #666;
+      padding: 10px 0;
+      font: 12px/20px "";
+      height: 40px; }
+      .public_top .pbl_hed_right .hover_box_font .box_font_cont p {
+        padding-left: 10px;
+        display: inline-block;
+        width: 90px; }
+        .public_top .pbl_hed_right .hover_box_font .box_font_cont p em {
+          margin-left: 5px;
+          color: #f33; }
+          .public_top .pbl_hed_right .hover_box_font .box_font_cont p em:hover {
+            color: #c30; }
+        .public_top .pbl_hed_right .hover_box_font .box_font_cont p:hover {
+          color: #c30; }
+    .public_top .pbl_hed_right .hover_box_font:hover {
+      background: #fff;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc; }
+  .public_top .pbl_hed_right .hover_box {
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    position: relative;
+    text-align: center; }
+    .public_top .pbl_hed_right .hover_box .top_qr_code {
+      display: none;
+      position: absolute;
+      left: -37px;
+      top: 30px;
+      z-index: 100;
+      width: 130px;
+      height: 130px;
+      border: 1px solid #ccc;
+      background: #fff; }
+    .public_top .pbl_hed_right .hover_box:hover {
+      background: #fff;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc; }
+  .public_top .pbl_hed_right .hover_box_phone {
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    position: relative;
+    text-align: center; }
+    .public_top .pbl_hed_right .hover_box_phone .top_box_p {
+      display: none;
+      position: absolute;
+      left: -24px;
+      top: 30px;
+      width: 100px;
+      height: 30px;
+      border: 1px solid #ccc;
+      background: #fff; }
+    .public_top .pbl_hed_right .hover_box_phone:hover {
+      background: #fff;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc; }
+  .public_top i {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-left: 1px solid #9c9c9c;
+    border-top: 1px solid #9c9c9c;
+    transform: rotateZ(-135deg);
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-top: -3px; }
+  .public_top .hover_red:hover {
+    text-decoration: underline;
+    color: #c30; }
+
+.zc_top_cen {
+  text-align: center;
+  padding: 10px 0; }
+  .zc_top_cen a {
+    color: #36c; }
+    .zc_top_cen a:hover {
+      color: #c00; }
+
+.zc_head {
+  padding: 30px 0; }
+  .zc_head .zc_logo img {
+    display: inline-block;
+    vertical-align: middle; }
+  .zc_head .zc_right {
+    padding: 2px 0 0; }
+    .zc_head .zc_right .flow_wrap li {
+      float: left;
+      width: 90px;
+      padding: 0 14px 0 0;
+      background: url(../detailpageimg/step_bg.png) no-repeat 100% -74px;
+      background-color: #e6e6e6;
+      font: 14px/36px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+      text-align: center; }
+    .zc_head .zc_right .flow_wrap .s1 {
+      padding: 0 14px;
+      background-position: 100% 0;
+      background-color: #ffcccc;
+      color: #c00; }
+    .zc_head .zc_right .flow_wrap .s2 {
+      background-position: 100% -37px;
+      background-color: #e02d2d;
+      color: #fff; }
+    .zc_head .zc_right .flow_wrap .s5 {
+      padding: 0;
+      background: #e6e6e6; }
+
+.container {
+  margin: 0 0 20px; }
+  .container a {
+    color: #36c; }
+  .container .con_hd {
+    margin: 0 0 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #ebebeb; }
+    .container .con_hd .links {
+      float: right;
+      font: 12px/40px "Microsoft YaHei"; }
+    .container .con_hd .title {
+      font: 700 16px/40px "Microsoft YaHei"; }
+  .container .addr_list .addr_li {
+    position: relative;
+    margin: 0 0 2px;
+    padding: 6px 88px 6px 10px;
+    color: #666;
+    zoom: 1;
+    background: #f7f7f7; }
+    .container .addr_list .addr_li .addr_info {
+      padding: 15px 0 5px 22px;
+      display: none; }
+      .container .addr_list .addr_li .addr_info dl {
+        position: relative;
+        zoom: 1;
+        padding: 0 0 10px 75px; }
+        .container .addr_list .addr_li .addr_info dl dt {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 75px;
+          font: 12px/26px "Arial";
+          color: #666; }
+          .container .addr_list .addr_li .addr_info dl dt em {
+            padding: 0 8px 0 0;
+            color: #f30;
+            font-family: "Simsun"; }
+        .container .addr_list .addr_li .addr_info dl dd {
+          overflow: hidden;
+          zoom: 1; }
+          .container .addr_list .addr_li .addr_info dl dd span {
+            float: left;
+            font: 12px/26px "Arial";
+            color: #666; }
+          .container .addr_list .addr_li .addr_info dl dd .text {
+            color: #000;
+            float: left;
+            margin: 0 10px 0 0;
+            padding: 2px 5px;
+            width: 118px;
+            height: 20px;
+            border: 1px solid #d6d6d6;
+            font: 12px/20px "Arial"; }
+          .container .addr_list .addr_li .addr_info dl dd .wrong_tips {
+            color: #c00;
+            margin-left: 10px;
+            position: relative; }
+          .container .addr_list .addr_li .addr_info dl dd .none {
+            display: none; }
+          .container .addr_list .addr_li .addr_info dl dd .shouhuowrong {
+            display: none; }
+      .container .addr_list .addr_li .addr_info .addr_area dd {
+        height: 26px; }
+      .container .addr_list .addr_li .addr_info select {
+        width: 87px;
+        height: 26px;
+        float: left;
+        margin: 0 5px 0 0;
+        border: 1px solid #d6d6d6; }
+      .container .addr_list .addr_li .addr_info .clickadd {
+        margin-left: 6px;
+        color: #144b9e;
+        font: 14px/25px "微软雅黑"; }
+      .container .addr_list .addr_li .addr_info .addr_detail .text {
+        width: 338px; }
+      .container .addr_list .addr_li .addr_info .addr_number {
+        position: relative; }
+        .container .addr_list .addr_li .addr_info .addr_number dl {
+          float: left;
+          margin: 0 20px 0 0;
+          width: 152px; }
+        .container .addr_list .addr_li .addr_info .addr_number .fixed_num {
+          padding: 0 0 10px 60px;
+          width: 332px; }
+          .container .addr_list .addr_li .addr_info .addr_number .fixed_num dt {
+            width: 60px; }
+        .container .addr_list .addr_li .addr_info .addr_number .tips {
+          float: left;
+          color: #999;
+          line-height: 25px; }
+      .container .addr_list .addr_li .addr_info .addr_default {
+        display: block;
+        padding: 0px 0 20px 75px;
+        color: #333; }
+        .container .addr_list .addr_li .addr_info .addr_default input {
+          margin: 0 5px 0 0; }
+      .container .addr_list .addr_li .addr_info .savebtn {
+        display: block;
+        width: 120px;
+        height: 30px;
+        margin: 15px 0 0 75px;
+        border: 0 none;
+        cursor: pointer;
+        font: 14px/30px "Microsoft YaHei";
+        color: #fff;
+        text-align: center;
+        background: url(../detailpageimg/icon.png) no-repeat 0 -270px; }
+        .container .addr_list .addr_li .addr_info .savebtn:hover {
+          background: url(../detailpageimg/icon.png) no-repeat 0 -301px; }
+    .container .addr_list .addr_li .operate {
+      position: absolute;
+      top: 6px;
+      right: 10px; }
+  .container .payment {
+    padding: 20px 10px; }
+    .container .payment li {
+      float: left;
+      margin: 0 10px 0 0;
+      width: 110px;
+      height: 36px;
+      border: 1px solid #dbd8d8;
+      font: 14px/36px "Microsoft YaHei";
+      text-align: center; }
+    .container .payment .current {
+      position: relative;
+      width: 108px;
+      height: 34px;
+      border: 2px solid #c00;
+      line-height: 34px; }
+      .container .payment .current .ico {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 11px;
+        height: 11px;
+        background: url(../detailpageimg/icon.png) no-repeat -118px -333px; }
+  .container .invoice_tit {
+    font: 14px/34px "微软雅黑";
+    height: 34px;
+    color: #333;
+    margin-left: 10px; }
+    .container .invoice_tit a {
+      margin-left: 20px; }
+  .container .modify {
+    display: none;
+    background-color: #f7f7f7;
+    font-size: 12px;
+    padding: 10px 0 20px 20px; }
+    .container .modify .inv_now {
+      height: 32px;
+      line-height: 32px;
+      color: #c00; }
+    .container .modify .inv_title_select {
+      color: #666;
+      height: 26px;
+      line-height: 26px; }
+      .container .modify .inv_title_select .com {
+        margin-left: 15px; }
+      .container .modify .inv_title_select .input-text {
+        opacity: 0;
+        height: 22px;
+        width: 273px;
+        margin-left: 10px; }
+    .container .modify .inv_prompt {
+      color: #aeaeae;
+      line-height: 24px;
+      padding-top: 12px; }
+      .container .modify .inv_prompt .pro_content {
+        margin-left: 60px; }
+    .container .modify .inv_btn {
+      margin: 15px 0 0 60px; }
+      .container .modify .inv_btn a {
+        display: inline-block;
+        width: 118px;
+        height: 28px;
+        border: 1px solid #ccc;
+        text-align: center;
+        font: 14px/28px "微软雅黑";
+        border-radius: 2px; }
+        .container .modify .inv_btn a:hover {
+          text-decoration: none; }
+      .container .modify .inv_btn .preserva {
+        border-color: #cd2727;
+        background-color: #da2c2c;
+        color: #fff; }
+        .container .modify .inv_btn .preserva:hover {
+          background: #c00; }
+      .container .modify .inv_btn .refuse {
+        border-color: #ccc;
+        background-color: #f9f9f9;
+        color: #333;
+        margin-left: 10px; }
+  .container .goods_list th {
+    padding: 0 10px;
+    font: 12px/34px "Microsoft YaHei";
+    text-align: center;
+    border-bottom: 2px solid #c0daf8; }
+  .container .goods_list td {
+    padding: 20px 10px;
+    background: #fbfcff;
+    text-align: center; }
+  .container .goods_list .cell-1 {
+    width: 300px; }
+    .container .goods_list .cell-1 .store-name {
+      text-align: left; }
+      .container .goods_list .cell-1 .store-name img {
+        margin: 0 0 0 10px;
+        display: inline-block;
+        vertical-align: middle; }
+    .container .goods_list .cell-1 .good_info .pro {
+      float: left;
+      display: block;
+      margin: 0 10px 0 0; }
+      .container .goods_list .cell-1 .good_info .pro .span_img {
+        display: block;
+        text-align: center;
+        border: 1px solid #ebeffa;
+        width: 80px;
+        height: 80px;
+        background: #fff;
+        vertical-align: middle; }
+        .container .goods_list .cell-1 .good_info .pro .span_img img {
+          display: inline-block; }
+    .container .goods_list .cell-1 .good_info .title {
+      float: left;
+      width: 202px;
+      height: 36px;
+      overflow: hidden;
+      font: 12px/18px "微软雅黑"; }
+      .container .goods_list .cell-1 .good_info .title a {
+        color: #333; }
+    .container .goods_list .cell-1 .good_info .color_suit {
+      float: left;
+      width: 202px;
+      padding: 7px 0 0 0; }
+      .container .goods_list .cell-1 .good_info .color_suit dl {
+        position: relative;
+        padding: 0 0 0 36px;
+        font: 12px/18px "微软雅黑";
+        color: #666; }
+        .container .goods_list .cell-1 .good_info .color_suit dl dt {
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: #999; }
+        .container .goods_list .cell-1 .good_info .color_suit dl dd {
+          text-align: left; }
+      .container .goods_list .cell-1 .good_info .color_suit .suits span {
+        display: inline-block;
+        padding: 0 10px 0 0;
+        background: url(../detailpageimg/icon.png) 100% -363px;
+        cursor: pointer; }
+      .container .goods_list .cell-1 .good_info .color_suit .suits .suit-details {
+        display: none;
+        border: 1px solid #eee;
+        padding: 5px; }
+  .container .goods_list .cell-2 {
+    width: 170px; }
+    .container .goods_list .cell-2 .original {
+      color: #999;
+      text-decoration: line-through; }
+  .container .goods_list .cell-3 {
+    width: 120px; }
+  .container .goods_list .cell-4 {
+    width: 164px; }
+    .container .goods_list .cell-4 .icon {
+      background-color: #ce1a1b;
+      color: #fff;
+      display: inline-block;
+      font: 12px/18px "微软雅黑";
+      height: 18px;
+      padding: 0 3px; }
+    .container .goods_list .cell-4 .time {
+      color: #333;
+      font-size: 12px;
+      line-height: 24px; }
+      .container .goods_list .cell-4 .time span {
+        color: #ce1a1b; }
+  .container .goods_list .cell-5 {
+    padding: 0 25px 0 10px;
+    width: 106px; }
+  .container .goods_list .order_cen {
+    padding: 0 10px;
+    border-top: 1px solid #c0daf8;
+    background: #f2f6ff;
+    text-align: left; }
+    .container .goods_list .order_cen .massage_box {
+      float: left;
+      position: relative;
+      zoom: 1;
+      margin: 20px 0 0;
+      padding: 0 0 0 77px; }
+      .container .goods_list .order_cen .massage_box .label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font: 12px/28px "Microsoft YaHei";
+        color: #999; }
+      .container .goods_list .order_cen .massage_box .text_area {
+        display: block;
+        padding: 4px 10px;
+        width: 320px;
+        height: 66px;
+        border: 1px solid #cee2f8;
+        background: #fff;
+        font: 12px/18px "Microsoft YaHei";
+        color: #999; }
+      .container .goods_list .order_cen .massage_box .words-num {
+        display: block;
+        padding: 6px 0 0;
+        font: 12px/18px "Microsoft YaHei";
+        color: #999; }
+  .container .goods_list .order_info {
+    float: right;
+    width: 300px;
+    padding: 10px 0 0;
+    text-align: left; }
+    .container .goods_list .order_info dl {
+      font: 12px/30px "Microsoft YaHei"; }
+      .container .goods_list .order_info dl dt {
+        float: left;
+        width: 60px;
+        color: #999;
+        text-align: right; }
+      .container .goods_list .order_info dl dd {
+        float: left;
+        width: 170px; }
+      .container .goods_list .order_info dl .price {
+        width: 70px;
+        text-align: right;
+        color: #c00; }
+
+.submit_order {
+  padding: 32px 0 0;
+  text-align: right; }
+  .submit_order .total_price {
+    padding: 0 0 23px; }
+    .submit_order .total_price span {
+      float: right;
+      padding: 0 0 0 20px;
+      font: 12px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+      color: #666; }
+    .submit_order .total_price .price {
+      position: relative;
+      top: -5px; }
+      .submit_order .total_price .price em {
+        font-size: 24px;
+        font-family: Verdana; }
+    .submit_order .total_price em {
+      color: #c00; }
+  .submit_order .submit_btn {
+    float: right;
+    display: block;
+    margin: 0 0 0 10px;
+    width: 160px;
+    height: 46px;
+    text-indent: -9999em;
+    overflow: hidden;
+    font: 0/0 "Arial";
+    border: 0 none;
+    cursor: pointer;
+    background: url(../detailpageimg/icon.png) no-repeat 0 0; }
+    .submit_order .submit_btn:hover {
+      background: url(../detailpageimg/icon.png) no-repeat 0 -47px; }
+
+.footer {
+  margin: 40px auto 0;
+  padding: 5px 0 20px;
+  width: 960px;
+  text-align: center;
+  border-top: 1px solid #e3e3e3; }
+  .footer .links {
+    padding: 14px 0 6px;
+    color: #ccc; }
+    .footer .links a {
+      margin: 0 10px;
+      color: #36c; }
+      .footer .links a:hover {
+        color: #c00;
+        text-decoration: underline; }
+  .footer p {
+    color: #333; }
+  .footer .copyright {
+    display: inline-block;
+    height: 23px;
+    padding-left: 28px;
+    position: relative;
+    line-height: 23px; }
+  .footer .author {
+    padding-top: 12px; }
+    .footer .author a {
+      vertical-align: middle;
+      margin-right: 8px; }
+      .footer .author a img {
+        display: inline-block; }

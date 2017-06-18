@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单确认页-NN商城</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/conformorder.css"/>
+	</head>
+	<body>
+		<div class="public_top">
+			<div class="margin">
+				<div class="pbl_hed_left l">
+					<a href="index.html" class="hover_red">商城首页</a>
+					<span>您好，请</span><a href="login.html" id="loginNow" class="bule_a hover_red">登录</a>
+					<a href="#" id="registerNow"  class="bule_a hover_red">退出</a>
+				</div>
+				<div class="pbl_hed_right r">
+					<a href="#" class="hover_red">我的订单</a>
+					<a href="#" class="hover_box_font">买家中心<i></i>
+						<b class="box_font_cont">
+							<p href="#">关注的店铺<em>30</em></p>
+							<p href="#">关注的商品<em>8</em></p>
+						</b>
+					</a>
+					<a href="#" class="hover_red">购物车0件</a>
+					<a href="helpcenter.html" class="hover_red">帮助中心</a>
+					<span>|</span>
+					<a href="#" class="hover_box"><s></s>手机商城<i></i>
+						<img src="img/gaonana.png" class="top_qr_code"/>
+					</a>
+					<a href="#" class="hover_red">中关村在线</a>
+					<a href="#" class="hover_red">商家入驻</a>
+					<a href="#" class="hover_box_phone">联系客服<i></i>
+						<p class="top_box_p">400-50064892</p>
+					</a>
+				</div>	
+			</div>
+		</div>
+		<div class="zc_top_cen">
+			<a href="#">用户您好：NN商城服务热线现已更改为4006881999</a>
+		</div>
+		<div class="zc_head clear margin">
+			<div class="zc_logo l">
+				<a href="#">
+					<img src="detailpageimg/logo2.png" />
+					<img src="detailpageimg/zlcom.png"/>
+				</a>
+			</div>
+			<div class="zc_right r">
+				<ul class="flow_wrap">
+					<li class="s1">加入购物车</li>
+					<li class="s2">下订单</li>
+					<li class="s3">去付款</li>
+					<li class="s4">确认收货</li>
+					<li class="s5">评价</li>
+				</ul>
+			</div>
+		</div>
+		<div class="margin">
+			<!--收货人信息-->
+			<div class="container">
+				<div class="con_hd">
+                    <a href="#" class="links add_address_new">新增收货地址</a>
+                    <div class="title">收货地址</div>
+                </div>
+                <ul class="addr_list">
+                	<li class="addr_li">
+                		<label>
+                            <input type="radio" checked=""><span class="addnew">添加新地址</span>
+                            <span class="newspan">
+                            	<strong></strong>
+                            	<span class="newspan1"></span>
+                            	<span class="newspan2"></span>
+                            	<span class="newspan3"></span>
+                            	<span class="newspan4"></span>
+                            </span>
+                		</label>
+                		<div class="operate" >
+                			<a class="editor" href="javascript:;">编辑</a>
+                			<a class="drop" href="javascript:;">删除</a>
+                		</div>
+                		<div class="addr_info">
+                			<dl>
+                				<dt><em class="xh">*</em>收货人:</dt>
+                				<dd>
+                					<input type="text" class="text shouhuo" />
+                					<span class="wrong_tips none shouhuowrong">请填写收货人</span>
+                				</dd>
+                			</dl>
+                			<dl class="addr_area">
+                				<dt><em class="xh">*</em>所在地区：</dt>
+                				<dd class="clear">
+                					<select class="sheng sel">
+                						<option>省/市</option>
+                					</select>
+                					<select class="city sel">
+                						<option>市/县</option>
+                					</select>
+                					<select class="area sel">
+                						<option>县/区</option>
+                					</select>
+                					<a class="clickadd" href="javascript:;">地图定位添加地址</a>
+                					<span class="wrong-tips none selwrong" style="color: #c00;">请选择地区</span>
+                				</dd>
+                			</dl>
+                			<dl class="addr_detail">
+                				<dt><em class="xh">*</em>详细地址：</dt>
+                				<dd> 
+                                    <input type="text" value="" class="text det_addr" maxlength="30">
+                                    <span class="wrong-tips none addrwrong" style="color: #c00;">请填写详细地址，5~30字</span> 
+                				</dd>
+                			</dl>
+                			<div class="addr_number clear">
+                				<dl>
+                					<dt><em class="xh">*</em>手机号码：</dt>
+	                				<dd>
+	                					<input type="text" class="text mobilephone" />
+	                					<em class="tips">或</em>
+	                				</dd>
+                				</dl>
+                				<dl class="fixed_num">
+                					<dt>固定电话：</dt>
+                					<dd>
+                						<input type="text" class="text phonetext" maxlength="17"/>
+                						<em class="tips">手机号码和固定电话请至少输入一个</em>
+                						<span class="wrong-tips none phongwrong" style="color: #c00;">手机号码和固定电话请至少输入一个</span> 
+                					</dd>
+                				</dl>
+                			</div>
+                			<label class="addr_default">
+                                <input type="checkbox" class="checkbox" value="0">设置为默认地址
+                            </label>
+                            <input type="button" class="savebtn" value="确认收货地址">
+                		</div>
+                	</li>
+                	
+                </ul>
+			</div>
+			<!--支付方式-->
+			<div class="container">
+				<div class="con_hd">
+					<div class="title">支付方式</div>
+				</div>
+				<ul class="payment clear">
+					<li class="current">
+						网上支付
+						<i class="ico"></i>
+                    </li>
+				</ul>
+			</div>
+			<!--发票信息-->
+			<div class="container">
+				<div class="con_hd">
+					<div class="title">发票信息</div>
+				</div>
+				<div class="invoice_tit">
+					<span> 发票抬头：个人</span>
+					<a href="javascript:;" class="modify_btn">修改</a>
+				</div>
+				<div class="modify">
+					<p class="inv_now">目前只支持开具普通发票</p>
+					<div class="inv_title_select">发票抬头：
+                        <span class="single_people"><input type="radio" name="radio" checked=""> <label>个人</label></span>
+                        <span class="com"><input name="radio" type="radio"> <label>单位</label></span>
+                        <input type="text" class="input-text" placeholder="公司名称">
+                    </div>
+                    <div class="inv_prompt">
+                    	<span class="title">温馨提示：</span>
+                    	<ul class="pro_content">
+                            <li>1.数码，手机，家电类商品默认打印出商品名称和型号</li>
+                            <li>2.若选择不开发票，后续如需开发票，需与商家协商</li>
+                        </ul>
+                    </div>
+                    <div class="inv_btn">
+                        <a href="javascript:;d(0)" class="preserva">保存发票信息</a>
+                        <a href="javascript:;" class="refuse">不开发票</a>
+                    </div>
+				</div>
+			</div>
+			<!--确认订单信息-->
+			<div class="container">
+				<div class="con_hd">
+                    <div class="title">确认订单信息</div>
+                </div>
+                <div class="goods_list">
+                	<table>
+                		<tbody>
+                			<tr>
+                                <th class="cell-1">
+                                    <div class="store-name">店铺：
+                                    	<a href="http://www.zol.com/shop_192048/" target="_blank">三味腾达专营店</a>                                                                                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=296164814&amp;site=qq&amp;menu=yes" target="_blank">
+                                        	<img title="点击这里给我发消息" src="detailpageimg/qq_src.jpg"/>
+                                        </a>
+                                    </div>
+                                </th>
+                                <th class="cell-2">单价（元）</th>
+                                <th class="cell-3">数量</th>
+                                <th class="cell-4">商品优惠</th>
+                                <th class="cell-5">小计（元）</th>
+                            </tr>
+                            <tr>
+                            	<td class="cell-1">
+                            		<div class="good_info clear">
+                            			<a class="pro" href="#">
+                            				<span class="span_img">
+                            					<img src="detailpageimg/pro.jpg"/>
+                            				</span>
+                            			</a>
+                            			<span class="title">
+                            				<a href="#">【联想授权专卖】联想 小新Air 13 Pro（i5 6200U/4GB/256GB/2G独显）</a>
+                            			</span>
+                            			<div class="color_suit">
+                            				<dl>
+                            					<dt>颜色:</dt>
+                            					<dd>金色</dd>
+                            				</dl>
+                            				<dl class="suits">
+                                                <dt class="label">套装：</dt>
+                                                <dd>
+                                                    <span>官方标配</span>
+                                                    <div class="suit-details">
+                                                        <i class="ico"></i>
+                                                        <p>套装详情：</p>
+                                                        <p>笔记本主机 x1 电池 x1 电源适配器 x1</p>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                            			</div>
+                            			<a class="qi_a" href="http://go.zol.com/topic/3056598.html" target="_blank"> 
+                                            <img src="detailpageimg/qi.png"> 
+                                        </a>
+                            		</div>
+                            	</td>
+                            	<td class="cell-2">
+                                    ¥4749.00<p class="original">¥4928.00</p>
+                                </td>
+                                <td class="cell-3">1</td>
+                                <td class="cell-4">
+                                	<span class="icon">团购</span>
+                                    <p class="time"><span>79</span>小时<span>10</span>分<span>30</span>秒</p>
+                                </td>
+                                <td class="cell-5">¥4749.00</td>
+                            </tr>
+                            <tr>
+                            	<td colspan="5">
+                            		<div class="order_cen">
+                            			<div class="massage_box">
+	                            			<span class="label">给卖家留言：</span>
+	                            			<textarea class="text_area">您可以填写对商品的配送要求...</textarea>
+	                            			<span class="words-num">还可以输入200字</span>
+	                            		</div>
+                            		</div>
+                            		<div class="order_info">
+                            			<dl class="clear">
+                            				<dt>优惠 ：</dt>
+                            				<dd>
+                            					<select>
+                                                	<option>无</option>
+                                                </select>
+                            				</dd>
+                            				<dd class="price">0.00</dd>
+                            			</dl>
+                            			<dl>
+                            				<dt>运费 :</dt>
+                            				<dd>
+                            					<select>
+                                                	<option>顺丰包邮</option>
+                                                </select>	
+                            				</dd>
+                            				<dd class="price">0.00</dd>
+                            			</dl>
+                            		</div>
+                            	</td>
+                            </tr>
+                		</tbody>
+                	</table>
+                </div>
+			</div>
+			<!--提交订单-->
+			<div class="submit_order clear">
+				<div class="total_price clear">
+					<span class="price">实付额（含运费）：<em>¥4749.00</em></span>
+					<span>商家承诺支付货款后<em>24小时</em>内发货</span>
+				</div>
+				<div>
+                    <a class="submit_btn" href="paymoney.html">提交订单</a>
+                    <!--<div class="submit-loading" style="display:none;">提交中...</div>-->
+                </div>
+			</div>
+		</div>
+		<!--公共底部-->
+		<div class="footer">
+			<p class="links">
+				<a href="#">关于商城</a>|
+				<a  href="#">营销中心</a>|
+				<a href="#">服务中心</a>|
+				<a href="#">联系我们</a>|
+				<a href="#">发展历程</a>|
+				<a  href="#">媒体报道</a>
+			</p>
+			<p>
+				<span class="copyright">©2017中关村在线 版权所有. 京ICP备09041801号-182 
+                <a href="#">京ICP证010391号</a></span>
+			</p>
+			<div class="author">
+				<a href="#"><img src="detailpageimg/baian.png"/></a>
+				<a href="#"><img src="detailpageimg/jiancha.png"/></a>
+				<a href="#"><img src="detailpageimg/cert.png"/></a>
+			</div>
+		</div>
+		<script src="public/conform.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,382 @@
+@charset "UTF-8";
+.margin {
+  width: 1000px;
+  margin: 0 auto; }
+
+body {
+  background: #fef5e6; }
+
+a:hover {
+  color: #c00;
+  text-decoration: underline; }
+
+.public-header {
+  background: #fff; }
+  .public-header .hd-top {
+    border-bottom: 1px solid #dedede;
+    background: #efefef;
+    height: 31px; }
+    .public-header .hd-top .hd-about li {
+      float: left;
+      font: 12px/30px "Arial";
+      color: #666; }
+      .public-header .hd-top .hd-about li a {
+        padding: 0 10px; }
+      .public-header .hd-top .hd-about li span {
+        color: #999; }
+      .public-header .hd-top .hd-about li span.sp_last {
+        margin-right: 10px; }
+      .public-header .hd-top .hd-about li span.tel {
+        color: #c00; }
+    .public-header .hd-top .hd-about .dingyue {
+      position: relative; }
+      .public-header .hd-top .hd-about .dingyue a:hover {
+        color: #666;
+        text-decoration: none; }
+      .public-header .hd-top .hd-about .dingyue .email-box {
+        display: none;
+        width: 287px;
+        height: 92px;
+        padding: 0 10px;
+        position: absolute;
+        top: 31px;
+        right: 0;
+        border: 1px solid #dedede;
+        background: #efefef;
+        color: #666; }
+        .public-header .hd-top .hd-about .dingyue .email-box .e_adr {
+          color: #666; }
+        .public-header .hd-top .hd-about .dingyue .email-box input {
+          vertical-align: middle;
+          font-size: 100%; }
+        .public-header .hd-top .hd-about .dingyue .email-box input#tuan_email {
+          width: 210px;
+          height: 28px;
+          padding: 0 5px;
+          line-height: 28px;
+          color: #333333;
+          float: left;
+          border: 1px solid #dedede; }
+        .public-header .hd-top .hd-about .dingyue .email-box input#tuan_button {
+          float: left;
+          width: 66px;
+          margin-left: -1px;
+          height: 30px;
+          background: #f12721;
+          color: #fff;
+          text-align: center;
+          border: 0 none;
+          cursor: pointer; }
+        .public-header .hd-top .hd-about .dingyue .email-box .remind1 {
+          color: #ccc;
+          float: left; }
+    .public-header .hd-top .hd-about .kefu {
+      color: #000; }
+    .public-header .hd-top .user-about {
+      margin-right: -10px;
+      font: 12px/30px "微软雅黑";
+      color: #ccc; }
+      .public-header .hd-top .user-about span {
+        color: #666; }
+        .public-header .hd-top .user-about span a {
+          color: #66c;
+          margin-right: 10px; }
+          .public-header .hd-top .user-about span a:hover {
+            color: #c00; }
+      .public-header .hd-top .user-about a {
+        margin: 0 10px; }
+  .public-header .hd-logo .logos {
+    display: block;
+    width: 275px;
+    height: 50px;
+    margin: 25px 0 0; }
+  .public-header .hd-logo .search-module {
+    margin: 30px 0 0 50px;
+    width: 398px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    position: relative; }
+    .public-header .hd-logo .search-module .text {
+      padding: 8px 10px;
+      width: 305px;
+      height: 22px;
+      font: 12px/22px "Arial";
+      border: 0 none;
+      color: #999;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .public-header .hd-logo .search-module .btn {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      width: 74px;
+      height: 40px;
+      background: #ce1a1b;
+      border: 0 none;
+      font: 14px/40px "Microsoft YaHei";
+      color: #fff;
+      cursor: pointer; }
+  .public-header .hd-logo .commitment {
+    margin-right: -15px;
+    padding: 21px 0; }
+    .public-header .hd-logo .commitment li {
+      float: left;
+      margin: 0 15px;
+      width: 50px; }
+      .public-header .hd-logo .commitment li a {
+        display: block;
+        padding: 32px 0 0;
+        font: 12px/26px "微软雅黑";
+        text-align: center;
+        color: #666;
+        background: url(../img/z-tuanhd.png) no-repeat; }
+        .public-header .hd-logo .commitment li a:hover {
+          text-decoration: none; }
+    .public-header .hd-logo .commitment li.deliver a {
+      background-position: 8px 0; }
+    .public-header .hd-logo .commitment li.retire a {
+      background-position: 8px -59px; }
+    .public-header .hd-logo .commitment li.service a {
+      background-position: 8px -118px; }
+  .public-header .hd-nav {
+    height: 40px;
+    background: #ce1a1b; }
+    .public-header .hd-nav .hd-nav-ul {
+      height: 100%;
+      float: left; }
+      .public-header .hd-nav .hd-nav-ul li {
+        float: left; }
+        .public-header .hd-nav .hd-nav-ul li a {
+          display: block;
+          padding: 0 15px;
+          color: #fff;
+          font: 14px/40px "微软雅黑"; }
+          .public-header .hd-nav .hd-nav-ul li a:hover {
+            background: #A90001;
+            text-decoration: none; }
+    .public-header .hd-nav .history.his-bg {
+      background: #a91516; }
+    .public-header .hd-nav .history {
+      height: 100%;
+      position: relative; }
+      .public-header .hd-nav .history .dropdown {
+        display: inline-block;
+        padding: 0 35px 0 32px;
+        background-position: 100% -267px;
+        font: 16px/40px "Microsoft YaHei";
+        color: #fff;
+        cursor: pointer;
+        background: url(../img/z-tuanhd.png) no-repeat;
+        background-position: 100% -267px; }
+      .public-header .hd-nav .history .history-down {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        padding: 0 15px;
+        width: 200px;
+        background: #a91516; }
+        .public-header .hd-nav .history .history-down .no-history {
+          padding: 22px 0;
+          text-align: center;
+          color: #e9ded9; }
+
+.order-tab {
+  padding: 9px 10px 0 10px;
+  border: 1px solid #d9c7a7;
+  background: #fff;
+  margin-top: 15px;
+  height: 31px; }
+  .order-tab li {
+    float: left;
+    height: 31px;
+    padding: 0 32px 0 24px;
+    display: inline;
+    font: 14px/31px "微软雅黑";
+    cursor: pointer; }
+    .order-tab li a {
+      color: #333; }
+      .order-tab li a:hover {
+        color: #c00; }
+  .order-tab li.cur {
+    height: 32px;
+    position: relative;
+    line-height: 32px;
+    margin-bottom: -1px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0 -435px; }
+    .order-tab li.cur span {
+      display: block; }
+
+.main {
+  width: 740px; }
+  .main .problem.problem-first {
+    display: block; }
+  .main .problem {
+    display: none;
+    padding: 20px;
+    border: 1px solid #d9c7a7;
+    background: #fff;
+    margin-top: 20px; }
+    .main .problem h3.pro_i {
+      background: #eee; }
+      .main .problem h3.pro_i i {
+        background-position: -74px -200px; }
+    .main .problem li {
+      position: relative;
+      margin-bottom: 2px;
+      height: auto;
+      vertical-align: top; }
+      .main .problem li h3 {
+        padding: 10px 0 10px 20px;
+        background: #f7f7f7;
+        font: 700 14px/22px "";
+        height: 22px;
+        cursor: pointer; }
+        .main .problem li h3 i {
+          background: url(../img/icon.png) no-repeat;
+          background-position: -92px -200px;
+          display: block;
+          width: 11px;
+          height: 6px;
+          position: absolute;
+          top: 18px;
+          right: 22px;
+          cursor: pointer; }
+      .main .problem li .conts {
+        position: relative;
+        padding: 10px 20px 10px 44px;
+        background: #fff;
+        font: 12px/24px "";
+        color: #666; }
+        .main .problem li .conts .img1, .main .problem li .conts .img2 {
+          padding: 0 50px;
+          width: 200px; }
+          .main .problem li .conts .img1 img, .main .problem li .conts .img2 img {
+            padding-top: 10px; }
+          .main .problem li .conts .img1 span, .main .problem li .conts .img2 span {
+            display: block;
+            padding-top: 10px;
+            text-align: center; }
+        .main .problem li .conts .tips {
+          color: #f00; }
+        .main .problem li .conts img {
+          width: 580px; }
+        .main .problem li .conts strong {
+          padding: 10px 0 0;
+          display: block;
+          height: 24px;
+          color: #666;
+          font-size: 12px; }
+        .main .problem li .conts p {
+          padding-top: 5px; }
+        .main .problem li .conts .shouhou1 {
+          padding: 10px 0 0 15px; }
+
+.side {
+  width: 230px; }
+  .side .lunbo {
+    margin-top: 20px; }
+    .side .lunbo .lunbo-c {
+      position: relative;
+      width: 230px;
+      height: 185px; }
+      .side .lunbo .lunbo-c a.luna1 {
+        display: block; }
+      .side .lunbo .lunbo-c a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        width: 100%;
+        height: 100%; }
+      .side .lunbo .lunbo-c .lun-dot {
+        position: absolute;
+        right: 5px;
+        bottom: 5px; }
+        .side .lunbo .lunbo-c .lun-dot span {
+          float: left;
+          width: 16px;
+          height: 16px;
+          margin-left: 5px;
+          background: rgba(0, 0, 0, 0.5);
+          font: 12px/16px "Arial";
+          color: #fff;
+          text-align: center;
+          cursor: pointer; }
+        .side .lunbo .lunbo-c .lun-dot span.lun-cur {
+          background: #c00; }
+  .side .hot-title {
+    margin-top: 10px;
+    border: 1px solid #d9c7a7;
+    background: #fff; }
+    .side .hot-title .hot-tit {
+      padding-left: 10px;
+      font: 700 14px/34px "Arial";
+      border-bottom: 1px solid #d9c7a7;
+      background: #fffaf2; }
+    .side .hot-title .hot-aq {
+      padding: 0 10px; }
+      .side .hot-title .hot-aq li {
+        padding: 7px 0 7px 20px;
+        border-bottom: 1px dotted #e6e6e6;
+        background: url(../helpimg/new-bg.png) no-repeat;
+        background-position: -95px -22px;
+        word-break: break-all;
+        word-wrap: break-word; }
+        .side .hot-title .hot-aq li a {
+          color: #333; }
+    .side .hot-title .hot-more {
+      padding: 10px 0;
+      text-align: center; }
+      .side .hot-title .hot-more a {
+        color: #36c; }
+        .side .hot-title .hot-more a:hover {
+          color: #c00;
+          text-decoration: underline; }
+  .side .service-tel .tel-img {
+    margin-top: 10px; }
+
+.H-footer {
+  margin-top: 60px;
+  border-top: 3px solid #e02d2d;
+  background: #f8f8f8; }
+  .H-footer .foot-list {
+    padding: 40px 0;
+    border-bottom: 1px solid #e6e6e6; }
+    .H-footer .foot-list dl {
+      float: left;
+      margin-right: 20px;
+      width: 138px;
+      height: 134px;
+      border-right: 1px solid #e6e6e6; }
+      .H-footer .foot-list dl dt {
+        margin-bottom: 8px;
+        font: 18px/26px "Microsoft YaHei"; }
+      .H-footer .foot-list dl dd {
+        font: 14px/26px "Microsoft YaHei"; }
+        .H-footer .foot-list dl dd:hover a {
+          color: #666; }
+    .H-footer .foot-list .dl-service {
+      width: 175px;
+      border-right: 0; }
+      .H-footer .foot-list .dl-service .dl-phone {
+        color: #c00;
+        font-size: 26px; }
+    .H-footer .foot-list .foot-ad {
+      border-bottom: none;
+      padding: 0 2px;
+      background: #aaa;
+      border: 1px solid #aaa;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      position: relative;
+      top: 38px;
+      float: right;
+      color: #fff; }
+  .H-footer .footer-down {
+    height: 30px;
+    padding: 5px 0;
+    font: 12px/30px "Microsoft YaHei";
+    color: #999; }
